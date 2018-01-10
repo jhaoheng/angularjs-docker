@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  angularjs:
+    build: .
+    image: angularjs:latest
+    container_name: admin
+    ports:
+      - 4200:80/tcp
+    volumes:
+      - ./demo:/home/app
+    tty: true
