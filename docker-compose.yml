@@ -3,10 +3,10 @@ services:
   angularjs:
     build: .
     image: angularjs:latest
-    container_name: admin
+    container_name: App
     ports:
-      - 4200:80/tcp
+      - 80:4200/tcp
     volumes:
-      - ./yourApp:/home/app
+      - ./youApp:/home/app
     working_dir: /home/app
     command: ng serve --host 0.0.0.0
